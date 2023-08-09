@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:lottie/lottie.dart';
 import './insta_login_page.dart';
 
 void main() => runApp(const MaterialApp(
@@ -21,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     //what will happen when the page / app is  first launched
-    Timer(const Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 10), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (context) =>
              LoginPage())); //when timer completes it redirects to home
