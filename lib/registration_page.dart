@@ -16,7 +16,7 @@ class RegistrationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Center(
+          title:const Center(
             child 
              :Text("Registration Page"),
         ),
@@ -36,7 +36,7 @@ class RegistrationPage extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.person),
+                  prefixIcon:const Icon(Icons.person),
                   labelText: "First Name",
                   hintText: "Enter your first name",
                   helperText: "*Cannot be empty"
@@ -55,7 +55,7 @@ class RegistrationPage extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.person),
+                  prefixIcon:const Icon(Icons.person),
                   labelText: "Last Name",
                   hintText: "Enter your last name",
                   helperText: "*Cannot be empty"
@@ -74,7 +74,7 @@ class RegistrationPage extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.mail),
+                  prefixIcon:const Icon(Icons.mail),
                   labelText: "Email",
                   hintText: "Enter your mail here",
                   helperText: "*Email must be valid"
@@ -93,7 +93,7 @@ class RegistrationPage extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.phone),
+                  prefixIcon: const Icon(Icons.phone),
                   labelText: "Mobile Number",
                   hintText: "Enter your mobile number",
                   helperText: "*Mobile Number must contain 10 digits",
@@ -113,7 +113,7 @@ class RegistrationPage extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.password),
+                  prefixIcon:const Icon(Icons.password),
                   labelText: "Password",
                   hintText: "Enter Password",
                   helperText: "*Password must contain 8 characters",
@@ -133,7 +133,7 @@ class RegistrationPage extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  prefixIcon: Icon(Icons.password),
+                  prefixIcon: const Icon(Icons.password),
                   labelText: "Confirm Password",
                   hintText: "Re-enter Password",
                   helperText: "*Re-enter your password",
@@ -142,9 +142,9 @@ class RegistrationPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage()));
+                 Navigator.of(context).push(MaterialPageRoute(builder: (context) => const HomePage()));
               },
-              child: Text("Sign Up"),
+              child:const Text("Sign Up"),
             )
           ]),
         ));
